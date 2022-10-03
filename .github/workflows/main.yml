@@ -33,7 +33,6 @@ jobs:
     
       - name: Cypress Screenshot & Video Upload to WorkChat
         uses: SreeniIO/cypress-upload-to-workchat-action@v1.0.8
-        if: failure() && steps.cy-run.outcome == 'failure'
         with:
           token: 'DQVJ1ZAjhBRWQ3UXJ0WW8yV05sZAThxSFNvOTUtdHV1UmhNZAk1iWVM2WWcyT2tCTDBmdUllYzAtSHAzZAVhrRVhQNzNGSXp3dWpLZA0lzOGdEeHBhbFBQOUotRks5ZAXQwMHBrRVRoSjlvS2tneGwyWEhxbG5iNHlrNDR6NzhpVGh0SEdSMGRYeU1Jb0tKaGp5N2V4YTRvdkxZAYm9fa1RvdDJuNHFHSnRNYUtfM2hMMU40a2Q0SG93NGhuV2V1eUg3dGI2VGZAWZAWFR'
           channel: '4559984164046735'
