@@ -36,5 +36,5 @@ jobs:
         if: failure() && steps.cy-run.outcome == 'failure'
         with:
           token: ${{ secrets.WORKPLACE_TOKEN }}
-          channel: '4559984164046735'
+          channel: '5019551404812735'
           message-text: 'Cypress tests failed! They are being uploaded here, good luck.'
