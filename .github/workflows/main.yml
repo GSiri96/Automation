@@ -33,8 +33,8 @@ jobs:
     
       - name: Cypress Screenshot & Video Upload to WorkChat
         uses: SreeniIO/cypress-upload-to-workchat-action@v1.0.8
+        if: failure() && steps.cy-run.outcome == 'failure'
         with:
-         workdir: "/Users/sirisunkara/Practice/gitHub/actions-runner/_work/Automation/Automation/cypress"
-         token: ${{ secrets.WORKPLACE_TOKEN }}
-         channel: "100023224038727"
-         message-text: "Cypress tests failed! Please check"
+          token: ${{ secrets.WORKPLACE_TOKEN }}
+          channel: '4559984164046735'
+          message-text: 'Cypress tests failed! They are being uploaded here, good luck.'
