@@ -29,3 +29,11 @@ jobs:
       - name: Cypress run
         id: cy-run
         run: yarn cy:ci
+    
+    
+      - name: Cypress Screenshot & Video Upload to WorkChat
+        uses: SreeniIO/cypress-upload-to-workchat-action@v1.0.8
+        with:
+          token: ${{ secrets.WORKPLACE_TOKEN }}
+          channel: "100023224038727"
+          message-text: "Cypress tests failed! Please check"
