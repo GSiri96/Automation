@@ -35,6 +35,6 @@ jobs:
         uses: SreeniIO/cypress-upload-to-workchat-action@v1.0.8
         if: failure() && steps.cy-run.outcome == 'failure'
         with:
-          token: ${{ secrets.WORKPLACE_TOKEN }}
+          token: 'DQVJzQnR6SUU3TEtnS1ZAidDhLOXg1OHZAJdTk0eVo0eE9meUlSenEtLUhmOEFKSXhYSmlwX2R5MDJLMnhoZA3lSVGc4UEUxR1lGUGYtV2Q0dVhfTS1fZAFZAackVOa0VRSWpwbHE0ODBSNFk5SXVyZATdUclh6M0FpU3BMZAHJkNHNyRzBqSmR1R2hEX3poTWkwZA24yakpoVHRwUjJ2UTl4eEpyaU1MY001N2x5Qms0ZAno1THEwZAzJxOU5qS3M4aVZAXN2dVakpQR3Bn'
           channel: '4559984164046735'
           message-text: 'Cypress tests failed! They are being uploaded here, good luck.'
