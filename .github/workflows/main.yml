@@ -25,11 +25,9 @@ jobs:
         run: yarn install
         env:
           CI: true
-
-      - name: Cypress run
-        id: cy-run
-        run: yarn cy:ci
-    
     
       - name: Delete snaps
         run: pwd
+        env:
+          CI: true
+    
