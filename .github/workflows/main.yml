@@ -29,5 +29,5 @@ jobs:
       - name: Delete snaps
         run: pwd
         env:
-          CI: true
+          CI: rm -i cypress/snapshots/*/__diff_output__/*.png
     
