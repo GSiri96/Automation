@@ -11,7 +11,7 @@ const config: PlaywrightTestConfig = {
   //globalSetup: "./global-setup",
   use: {
     // Tell all tests to load signed-in state from 'storageState.json'.
-   // storageState: "storageState.json",
+    storageState: "storageState.json",
     screenshot: "only-on-failure",
     video:'on',
   },

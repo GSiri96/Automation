@@ -2,29 +2,7 @@ import { test, expect } from "@playwright/test";
 import { chromium, FullConfig } from "@playwright/test";
 
 
-test.only("logIn",async ({})=>{
-  const browser = await chromium.launch();
-  const context = await browser.newContext({
-    recordVideo: {
-      dir: "/Users/sirisunkara/Practice/gitHub/actions-runner/_work/Automation/Automation/videos",
-    },
-  });
-  context.clearCookies();
-  context.setDefaultNavigationTimeout(90000);
-  const page = await context.newPage();
-
-  await page.goto("https://dev.cloudio.io/", { waitUntil: "networkidle" });
-
-  await page.locator("#username").fill("siri");
-  await page.locator("#password").fill("u6c0mm0n@123L");
-  await page.pause();
-  await page.locator("[data-testid=signin]").click();
-  await page.screenshot();
-  await page.waitForSelector("#io-page-wrapper");
-  // Save signed-in state to 'storageState.json'.
-  await page.context().storageState({ path: "storageState.json" });
-})
-test("page panel", async ({ page }) => {
+test.only("page panel", async ({ page }) => {
   await page.goto("https://dev.cloudio.io/", {
     waitUntil: "networkidle",
   });

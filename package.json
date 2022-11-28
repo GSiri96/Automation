@@ -7,7 +7,7 @@
     "@playwright/test": "^1.28.1"
   },
   "scripts": {
-    "test": "yarn playwright test --headed",
+    "test": "yarn playwright test",
     "updatesnaps": "yarn playwright test --update-snapshots"
   }
 }
