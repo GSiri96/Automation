@@ -8,10 +8,10 @@ const config: PlaywrightTestConfig = {
     timeout: 60 * 1000,
   },
   workers: 1,
-  globalSetup: "./global-setup",
+  //globalSetup: "./global-setup",
   use: {
     // Tell all tests to load signed-in state from 'storageState.json'.
-    storageState: "storageState.json",
+   // storageState: "storageState.json",
     screenshot: "only-on-failure",
     video:'on',
   },
