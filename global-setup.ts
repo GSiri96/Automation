@@ -39,7 +39,7 @@ async function globalSetup(config: FullConfig) {
   await page.locator("#password").fill("u6c0mm0n@123L");
   await page.locator("[data-testid=signin]").click();
   await page.screenshot();
-  await page.waitForNavigation({ waitUntil: "networkidle" });
+  await page.waitForSelector("#io-page-wrapper");
   // Save signed-in state to 'storageState.json'.
   await page.context().storageState({ path: "storageState.json" });
   const log_out = async () => {
