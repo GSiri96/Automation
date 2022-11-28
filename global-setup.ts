@@ -48,9 +48,9 @@ async function globalSetup(config: FullConfig) {
     await page.pause();
 
     await page.click("role=menu  >> [data-testid=logout]");
-    await context.close();
-    await browser.close();
   };
+  await context.close();
+  await browser.close();
   return log_out;
 }
 
