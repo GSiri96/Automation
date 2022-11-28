@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("page panel", async ({ page }) => {
+test.only("page panel", async ({ page }) => {
   await page.goto("https://dev.cloudio.io/", {
     waitUntil: "networkidle",
   });
