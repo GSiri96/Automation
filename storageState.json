@@ -1,0 +1,35 @@
+{
+  "cookies": [
+    {
+      "name": "x",
+      "value": "9c860daff44b450e860a2f2316ab1234rzoFV5InZSeWeX1yfgxRS9KCXKLEHt94ecfjMjQGGZFRLIyWLvrfi/e4+CVl8MkqkjH2qj//ryze+Z42X44VtAy/C8YylYY4sk3ae350GbY=",
+      "domain": "dev.cloudio.io",
+      "path": "/",
+      "expires": 1669111092.398164,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "jwt",
+      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXMiOiJiNzEzZDNkNzJhNjc0NTRhYWEwZmFmYWJjNGZhOWVjMVZBcnZ1SHp5cXBlUGtrMWpuL0xrVWYzNXFUcjNpM2xSNG1XdlhDc1E3Y009IiwiY3NyIjoiNDAwMGM1MTUyNDY1NGM2YWI5MmI3MzYxM2M3OGIzOTRvSUszUjAzOFNmWkswdktiODd4enhoTkhJSXVobko0endtZjd6RDY3aUMyY2RJSjl4MGI3b2oxSC8xUGwvVU5yIiwib3JnIjoiMDI4ZDY4Y2E5NzI2NGYzNTk4MTY5MTg2NTc2MmZjMWVzcGV5OUp4YjBtZEYyWEdmekNRS3JBPT0iLCJleHAiOjE2Njk3MTUwMDEsImlhdCI6MTY2OTExMDIwMSwiaXNzIjoiQ2xvdWRJTyBQbGF0Zm9ybSA0LjAuMC45MTUifQ.k-ILI-W6QwYsGZmAHac_mhiV172SXan7Ylp-LdaULCw",
+      "domain": "dev.cloudio.io",
+      "path": "/",
+      "expires": 1669715001.995934,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "mfa",
+      "value": "a432f27450374875b05b69014bfcffcax2sMt5IumhWs173I7Y6lOQ==",
+      "domain": "dev.cloudio.io",
+      "path": "/",
+      "expires": 1700646201.996038,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": []
+}

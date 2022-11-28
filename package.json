@@ -1,15 +1,13 @@
 {
-  "name": "cypress-test",
+  "name": "PlayWright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
   "devDependencies": {
-    "cypress": "^10.8.0",
-    "cypress-image-snapshot": "^4.0.1",
-    "typescript": "^4.8.4"
+    "@playwright/test": "^1.28.1"
   },
   "scripts": {
-    "cy:open": "cypress open ",
-    "cy:ci": "cypress run --reporter cypress-image-snapshot/reporter "
-  },
-  "dependencies": {
-    "cypress-plugin-snapshots": "^1.4.4"
+    "test": "yarn playwright test --headed",
+    "updatesnaps": "yarn playwright test --update-snapshots"
   }
 }
