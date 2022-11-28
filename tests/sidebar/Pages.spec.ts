@@ -17,6 +17,7 @@ test.only("logIn",async ({})=>{
 
   await page.locator("#username").fill("siri");
   await page.locator("#password").fill("u6c0mm0n@123L");
+  await page.pause();
   await page.locator("[data-testid=signin]").click();
   await page.screenshot();
   await page.waitForSelector("#io-page-wrapper");
