@@ -21,7 +21,9 @@ jobs:
         with:
           clean: 'false'
       - name: Install dependencies
-        run: yarn install
+        run:  npm install @playwright/test  
+      - name: Installk dependencies
+        run:  npx playwright install
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
