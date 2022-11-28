@@ -24,7 +24,11 @@ const log_in = async (page) => {
 // }
 async function globalSetup(config: FullConfig) {
   const browser = await chromium.launch();
-  const context = await browser.newContext();
+  const context = await browser.newContext({
+    recordVideo: {
+      dir: "/Users/sirisunkara/Practice/gitHub/actions-runner/_work/Automation/Automation/videos",
+    },
+  });
   context.clearCookies();
   context.setDefaultNavigationTimeout(90000);
   const page = await context.newPage();
